@@ -1,7 +1,6 @@
 import { createElement } from "../lib";
+import Button from "./components/button";
 
-const App = () => createElement('div', {}, [
-    createElement('input', {onChange: (e) => console.log('change ', e.target.value )})
-])
+const App = () => createElement('div', null, Button({'text-content': 'Boton'}))
 
 export default App
