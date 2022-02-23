@@ -1,6 +1,6 @@
 import { createElement } from "../../lib"
 
-const Button = (props) => {
+const Button = ({counter, ...props}) => {
     return createElement('button', {...props}, null)
 }
 
